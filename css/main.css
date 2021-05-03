@@ -295,7 +295,7 @@ p {
     vertical-align: top;
     width: 490px;
     height: 505px;
-    background: url("/air-asia/img/gates.jpg") center center / cover no-repeat;
+    background: url("./../img/gates.jpg") center center / cover no-repeat;
 }
 
 .about__desc {
@@ -303,7 +303,7 @@ p {
     vertical-align: top;
     width: 785px;
     min-height: 455px;
-    background: url("/air-asia/img/mountains.jpg") center center / cover no-repeat;
+    background: url("./../img/mountains.jpg") center center / cover no-repeat;
     margin-left: -142px;
     margin-top: 166px;
     padding: 70px 80px;
