@@ -194,14 +194,22 @@ p {
 .offers__feature {
     display: inline-block;
     vertical-align: top;
-    width: 100px;
-    margin-right: 10px;
+    width: 135px;
+    margin-right: 20px;
+    margin-bottom: 31px;
 }
 
 .offers__feature:last-child {
     margin-right: 0;
 }
-
+.offers__icon{
+    position: absolute;
+}
+.offers__icon-desc{
+    display: inline-block;
+    position: relative;
+    margin-left: 45px;
+}
 .offers__text {
 
     font-size: 14px;
