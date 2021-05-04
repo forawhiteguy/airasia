@@ -273,7 +273,7 @@ p{
     vertical-align: top;
     width: 785px;
     min-height: 455px;
-    background: url(./../img/mountains.jpg) center center / cover no-repeat;
+    background: url(./img/mountains.jpg) center center / cover no-repeat;
     margin-left: -137px;
     margin-top: 96px;
     padding: 70px 82px;
@@ -337,7 +337,7 @@ p{
     background-image: url('./img/vk-hover.png');
 }
 .socials__link--facebook{
-    background-image: url('/img/f.png');
+    background-image: url('./img/f.png');
 }
 .socials__link--facebook:hover{
     background-image: url('./img/f-hover.png');
