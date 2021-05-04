@@ -1,0 +1,353 @@
+body {
+    background: #001821;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+a {
+    color: inherit;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    font-weight: normal;
+}
+* {
+    box-sizing: border-box;
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+.wrapper__content{
+    background: url('./img/background1.jpg') center top no-repeat, url('./img/background2.jpg') right -14px bottom 187px no-repeat;
+}
+.header {
+    height: 120px;
+    position: relative;
+    margin-bottom: 75px;
+    
+}
+.container{
+    margin: 0 auto;
+    width: 1140px;
+}
+.logo {
+    display: block;
+    position: absolute;
+    top: 29px;
+    left: 0;
+}
+.menu{
+    top: 37px;
+    left: 164px;
+    position: absolute;
+}
+.menu__item{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 51px;
+}
+.menu__item:last-child{
+    margin-right: 0;
+}
+.menu__link{
+    font-size: 14px;
+    text-decoration: none;
+}
+.menu__link:hover{
+    color: #DA0100;
+}
+.contacts{
+    top: 26px;
+    right: 0;
+    position: absolute;
+    font-style: normal;
+    text-align: right;
+}
+.contacts__phone{
+    display: block;
+    text-decoration: none;
+    font-size: 26px;
+    margin-bottom: -7px;
+}
+.contacts__workhours{
+    font-size: 13px;
+    text-decoration: underline;
+}
+.contacts__info{
+    color: #9A9A9A;
+    font-size: 11px;
+}
+
+.hello{
+    width: 520px;
+    margin-bottom: 263px;
+}
+.hello__title{
+    font-size: 72px;
+    font-weight: bold;
+    margin-bottom: 27px;
+}
+.hello__text{
+    font-size: 18px;
+    margin-bottom: 47px;
+}
+.button {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #F5170E;
+    border-radius: 35px;
+    padding: 18px 40px;
+}
+.button:hover{
+    background: #DA0100;
+}
+.offers{
+    margin-bottom: 127px;
+}
+.title{
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 51px;
+}
+.title--fire:after{
+    content: "";
+    background-image: url('./img/flame.png');
+    width: 21px;
+    height: 28px;
+    display: inline-block;
+    margin-left: 12px;
+}
+.offers__item{
+    min-height: 449px;
+    background: #FFF;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 22px;
+    width: 362px;
+}
+.offers__item:last-child{
+    margin-right: 0;
+}
+.offers__img{
+    min-height: 144px;
+    margin-bottom: 6px;
+    border-radius: 5px 5px 0px 0px;
+    overflow: hidden;
+}
+.offers__content{
+    padding: 22px 22px;
+}
+.offers__title{
+    color: #000000;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 21px;
+    
+}
+.offers__feature{
+    color: #666;
+    margin-bottom: 27px;
+    width: 150px;
+    display: inline-block;
+    vertical-align: top;
+}
+.offers__feature-icon{
+    position: absolute;
+    margin-left: 5px;
+}
+.offers__feature-text{
+    display: inline-block;
+    position: relative;
+    margin-left: 42px;
+    margin-top: 2px;
+}
+.offers__text{
+    color: #303030;
+    font-size: 14px;
+    margin-bottom: 45px;
+}
+.button--light{
+    color: #F5170E;
+    background: #FFFFFF;
+    border: 1px solid #F5170E;
+    padding: 18px 30px;
+
+}
+.button--light:hover{
+    background: #F5170E;
+    color: #fff;
+}
+
+.title--news{
+    margin-bottom: 51px;
+}
+.news__item{
+    width: 557px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 21px;
+    margin-bottom: 55px;
+}
+.news__item:last-child{
+    margin-right: 0;
+}
+.news__img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.news__content{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 15px 30px;
+    min-height: 140px;
+}
+.news__date{
+    font-size: 14px;
+}
+.news__title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.pagination{
+    text-align: center;
+    margin-bottom: 143px;
+}
+.pagination__info,.pagination__list{
+    display: inline-block;
+    vertical-align: middle;
+}
+.pagination__info{
+    margin-right: 26px;
+}
+.pagination__item{
+    display: inline-block;
+    vertical-align: middle;
+}
+.pagination__item--active .pagination__number{
+    background: #FFFFFF;
+    color: #F5170E;
+}
+.pagination__number{
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-weight: bold;
+    line-height: 32px;
+    text-decoration: none;
+}
+.pagination__number:hover{
+    background: #FFFFFF;
+    color: #F5170E;
+}
+.about{
+    margin-bottom: 115px;
+}
+.about__img{
+    position: relative;
+    border-radius: 5px;
+}
+.about__desc{
+    position: absolute;
+    display: inline-block;
+    vertical-align: top;
+    width: 785px;
+    min-height: 455px;
+    background: url(./../img/mountains.jpg) center center / cover no-repeat;
+    margin-left: -137px;
+    margin-top: 96px;
+    padding: 70px 82px;
+    border-radius: 5px;
+    
+}
+.about__title{
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #000000;
+}
+.about__text{
+    color: #060606;
+    margin-bottom: 56px;
+    font-size: 16px;
+    line-height: 27px;
+    width: 500px;
+}
+.about__text p{
+    margin-bottom: 20px;
+}
+.about__text p:last-child{
+    margin-bottom: 0;
+}
+.footer{
+    height: 152px;
+    position: relative;
+}
+.socials{
+    position: absolute;
+    top: 32px;
+    right: 265px;
+}
+.socials__item{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.socials__item:last-child{
+    margin-right: 0;
+}
+.socials__link{
+    display: block;
+    text-decoration: none;
+    width: 36px;
+    height: 36px;
+    background: center center no-repeat;
+}
+.socials__link--telegram{
+    background-image: url('./img/telegram.png');
+
+}
+.socials__link--telegram:hover{
+    background-image: url('./img/telegram-hover.png');
+}
+.socials__link--vk{
+    background-image: url('./img/vk.png');
+}
+.socials__link--vk:hover{
+    background-image: url('./img/vk-hover.png');
+}
+.socials__link--facebook{
+    background-image: url('/img/f.png');
+}
+.socials__link--facebook:hover{
+    background-image: url('./img/f-hover.png');
+}
+.socials__link--instagram{
+    background-image: url('./img/in.png');
+}
+.socials__link--instagram:hover{
+    background-image: url('./img/in-hover.png');
+}
+.footer{
+    border-top: 1px solid rgb(255,255,255,0.1);
+}
