@@ -27,18 +27,21 @@ p{
     padding: 0;
     margin: 0;
 }
+
 .wrapper__content{
     background: url('./img/background1.jpg') center top no-repeat, url('./img/background2.jpg') right -14px bottom 187px no-repeat;
 }
 .header {
     height: 120px;
-    position: relative;
     margin-bottom: 75px;
     
 }
 .container{
     margin: 0 auto;
     width: 1140px;
+}
+.header__container{
+    position: relative;
 }
 .logo {
     display: block;
@@ -301,6 +304,8 @@ p{
 }
 .footer{
     height: 152px;
+}
+.footer__container{
     position: relative;
 }
 .socials{
