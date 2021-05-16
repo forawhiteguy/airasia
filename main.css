@@ -263,15 +263,15 @@ html {
   background: #f5170e;
   color: #fff;
 }
-.button--theme--light{
+.button--theme--light {
   color: #f5170e;
   background: #ffffff;
   border: 1px solid #f5170e;
   padding: 18px 40px;
   max-width: 168px;
 }
-.button--theme--light:hover{
-  background: #F5170E;
+.button--theme--light:hover {
+  background: #f5170e;
   color: #fff;
 }
 /*----------NEWS SECTION----------*/
@@ -334,19 +334,17 @@ html {
   align-items: center;
   margin-bottom: 75px;
 }
-.pagination--theme--light{
+.pagination--theme--light {
   color: #000;
   margin-bottom: 67px;
-
 }
-.pagination--theme--light .pagination__item--active .pagination__number{
-  background: #F5170E;
-  color: #FFF;
-  
+.pagination--theme--light .pagination__item--active .pagination__number {
+  background: #f5170e;
+  color: #fff;
 }
-.pagination--theme--light .pagination__number:hover{
-  background: #F5170E;
-  color: #FFF;
+.pagination--theme--light .pagination__number:hover {
+  background: #f5170e;
+  color: #fff;
 }
 .pagination__list {
   display: flex;
@@ -560,28 +558,26 @@ html {
 
 /* page content */
 
-
 .page-content {
   background: #fff;
   color: #303030;
   padding: 100px 0 20px 0;
 }
 
-.col__services{
+.col__services {
   display: flex;
   margin-right: 40px;
 }
 .services__img {
   width: 460px;
-  
 }
 .services__content {
   flex: 1;
   padding: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .services__title {
@@ -611,34 +607,31 @@ html {
 }
 /* inner section */
 
-
-.inner-section{
+.inner-section {
   background: #fff;
   color: #000;
   padding: 95px 0 70px 0;
   margin-bottom: 20px;
 }
-.inner-section--bg--grey{
-  background: #F4F5F5;
-
+.inner-section--bg--grey {
+  background: #f4f5f5;
 }
-.inner-section__title{
-  color: #1A1B1E;
+.inner-section__title {
+  color: #1a1b1e;
   font-size: 48px;
   font-weight: bold;
   margin-bottom: 72px;
 }
-.partners{
+.partners {
   display: flex;
   flex-wrap: wrap;
   margin-left: -46px;
 }
-.partners__item{
+.partners__item {
   margin-left: 46px;
-  
 }
 
-.partners__link{
+.partners__link {
   text-decoration: none;
   display: flex;
   width: 250px;
@@ -648,15 +641,15 @@ html {
   filter: grayscale(100%);
   margin-bottom: 25px;
 }
-.partners__link:hover{
+.partners__link:hover {
   filter: grayscale(0);
 }
-.inner-footer__container{
+.inner-footer__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 45px 0;
 }
-.inner-footer{
+.inner-footer {
   margin-top: auto;
 }
