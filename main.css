@@ -43,7 +43,7 @@ body,
 html {
   height: 100%;
 }
-button{
+button {
   background: transparent;
   border: none;
   cursor: pointer;
@@ -111,10 +111,13 @@ button{
 .menu__link {
   font-size: 14px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .menu__link:hover {
   color: #da0100;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 .contacts {
@@ -127,13 +130,60 @@ button{
   text-decoration: none;
   font-size: 26px;
   margin-bottom: -2px;
+  cursor: pointer;
 }
-
+.contacts__phone:hover {
+  color: #da0100;
+  cursor: pointer;
+  transition: 0.5s;
+  cursor: pointer;
+}
 .contacts__workhours {
   font-size: 13px;
-  text-decoration: underline;
+  position: relative;
 }
 
+.contacts__workhours_wrap:hover {
+  color: red;
+  cursor: pointer;
+}
+.contacts__workhours_wrap:hover .dropdown {
+  right: 0;
+  opacity: 1;
+}
+.dropdown {
+  padding: 24px 20px 15px;
+  background: #ededed;
+  opacity: 0.8;
+  border-radius: 5px;
+  color: #000;
+  font-weight: 600;
+  position: absolute;
+  top: 80px;
+  left: -9999px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.dropdown:before {
+  content: '';
+  height: 32px;
+  width: 100%;
+  position: absolute;
+  top: -30px;
+  left: 0;
+}
+.dropdown:after {
+  content: '';
+  position: absolute;
+  border: 10px solid transparent;
+  border-bottom-color: #ededed;
+  border-top-width: 0;
+  top: -10px;
+  right: 50px;
+}
+.dropdown__day {
+  font-weight: bold;
+}
 .contacts__info {
   color: #9a9a9a;
   font-size: 11px;
@@ -180,9 +230,12 @@ button{
 
 .button:hover {
   background: #da0100;
+  transition: 0.5s;
+  cursor: pointer;
 }
-.button--size--big{
+.button--size--big {
   padding: 18px 58px;
+  cursor: pointer;
 }
 /*----------OFFERS SECTION----------*/
 
@@ -264,11 +317,14 @@ button{
   border: 1px solid #f5170e;
   padding: 18px 30px;
   max-width: 135px;
+  cursor: pointer;
 }
 
 .button--light:hover {
   background: #f5170e;
   color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
 }
 .button--theme--light {
   color: #f5170e;
@@ -276,31 +332,39 @@ button{
   border: 1px solid #f5170e;
   padding: 18px 40px;
   max-width: 168px;
+  cursor: pointer;
 }
 .button--theme--light:hover {
   background: #f5170e;
   color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
 }
-.button--color--black{
+.button--color--black {
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
   color: #fff;
-  background: #8E8E8E;
+  background: #8e8e8e;
   border-radius: 35px;
   padding: 18px 45px;
-
+  cursor: pointer;
 }
-.button--color--black:hover{
-  background: #2B2B2B;
+.button--color--black:hover {
+  background: #2b2b2b;
+  transition: 0.5s;
+  cursor: pointer;
 }
-.button--color--red{
+.button--color--red {
   color: #fff;
-  background: #F5170E;
+  background: #f5170e;
   padding: 18px 40px;
+  cursor: pointer;
 }
-.button--color--red:hover{
-  background: #DA0100;
+.button--color--red:hover {
+  background: #da0100;
+  transition: 0.5s;
+  cursor: pointer;
 }
 /*----------NEWS SECTION----------*/
 
@@ -361,10 +425,12 @@ button{
   justify-content: center;
   align-items: center;
   margin-bottom: 75px;
+  cursor: pointer;
 }
 .pagination--theme--light {
   color: #000;
   margin-bottom: 67px;
+  cursor: pointer;
 }
 .pagination--theme--light .pagination__item--active .pagination__number {
   background: #f5170e;
@@ -373,6 +439,7 @@ button{
 .pagination--theme--light .pagination__number:hover {
   background: #f5170e;
   color: #fff;
+  transition: 0.5s;
 }
 .pagination__list {
   display: flex;
@@ -405,6 +472,7 @@ button{
 .pagination__number:hover {
   background: #ffffff;
   color: #f5170e;
+  transition: 0.5s;
 }
 
 /*---------ABOUT SECTION----------*/
@@ -506,34 +574,46 @@ button{
 
 .socials__link--telegram {
   background-image: url('./img/telegram.png');
+  cursor: pointer;
 }
 
 .socials__link--telegram:hover {
   background-image: url('./img/telegram-hover.png');
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 .socials__link--vk {
   background-image: url('./img/vk.png');
+  cursor: pointer;
 }
 
 .socials__link--vk:hover {
   background-image: url('./img/vk-hover.png');
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 .socials__link--facebook {
   background-image: url('./img/f.png');
+  cursor: pointer;
 }
 
 .socials__link--facebook:hover {
   background-image: url('./img/f-hover.png');
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 .socials__link--instagram {
   background-image: url('./img/in.png');
+  cursor: pointer;
 }
 
 .socials__link--instagram:hover {
   background-image: url('./img/in-hover.png');
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 /*----------SERVICES PAGE----------*/
@@ -568,6 +648,7 @@ button{
   align-items: center;
   padding-right: 1px;
 }
+
 .breadcrumbs__item--active .breadcrumbs__link {
   font-weight: bold;
 }
@@ -582,8 +663,13 @@ button{
 .breadcrumbs__link {
   color: #9a9a9a;
   font-size: 14px;
+  cursor: pointer;
 }
-
+.breadcrumbs__link:hover {
+  color: #da0100;
+  transition: 0.5s;
+  cursor: pointer;
+}
 /* page content */
 
 .page-content {
@@ -638,7 +724,7 @@ button{
 .inner-section {
   background: #fff;
   color: #000;
-  padding: 95px 0 70px 0;
+  padding: 63px 0 86px 0;
   margin-bottom: 20px;
 }
 .inner-section--bg--grey {
@@ -648,7 +734,7 @@ button{
   color: #1a1b1e;
   font-size: 48px;
   font-weight: bold;
-  margin-bottom: 72px;
+  margin-bottom: 63px;
 }
 .partners {
   display: flex;
@@ -668,9 +754,12 @@ button{
   justify-content: center;
   filter: grayscale(100%);
   margin-bottom: 25px;
+  cursor: pointer;
 }
 .partners__link:hover {
   filter: grayscale(0);
+  transition: 0.5s;
+  cursor: pointer;
 }
 .inner-footer__container {
   display: flex;
@@ -682,162 +771,169 @@ button{
   margin-top: auto;
 }
 
-
 /*reviews page*/
-.reviews{
+.reviews {
   column-count: 2;
   column-gap: 30px;
-  margin-bottom: 70px;
+  margin-bottom: 25px;
 }
-.reviews__item{
-  margin-bottom: 20px;
+.reviews__item {
+  margin-bottom: 17px;
 }
-.review{
+.review {
   display: inline-flex;
   flex-direction: column;
   padding: 50px 30px;
-  background: #F4F5F5;
+  background: #f4f5f5;
 }
-.review__header{
+.review__header {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
-.review__user{
+.review__photo {
+  margin-right: 20px;
+}
+.review__user {
   display: flex;
   align-items: center;
   font-size: 24px;
   font-weight: bold;
-  color: #2E77A4;
+  color: #2e77a4;
   margin-bottom: 11px;
+  cursor: pointer;
 }
-.review__user:after{
+.review__user:after {
   content: url('./img/vk-blue.png');
   height: 29px;
+  margin-left: 10px;
 }
-.avatar{
+.review__user:hover {
+  color: #1a8dd4;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.avatar {
   width: 140px;
   height: 140px;
   overflow: hidden;
 }
-.review__tags{
+.review__tags {
   display: flex;
   align-items: flex-start;
 }
-.tag{
+.tag {
   font-size: 13px;
   color: #303030;
   padding: 10px 18px;
   border-radius: 50px;
-  background: #E7E7E7;
+  background: #e7e7e7;
 }
-.tag--bg--green{
-  background: #B9EAE4;
+.tag--bg--green {
+  background: #b9eae4;
 }
-.review__title{
-  color: #1A1B1E;
+.review__title {
+  color: #1a1b1e;
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 23px;
+  line-height: 42px;
 }
-.review__content-text{
+.review__content-text {
   margin-bottom: 50px;
+  font-size: 16px;
+  line-height: 27px;
 }
-.review__date{
+.review__date {
   font-size: 14px;
-  color: #1A1B1E;
+  color: #1a1b1e;
   font-weight: bold;
 }
 
-
-
 /*separator section*/
 
-
-.separator{
-  background: url('./img/couple.png')right 420px bottom no-repeat, url('./img/Rectangle.jpg');
+.separator {
+  background: url('./img/couple.png') right 420px bottom no-repeat,
+    url('./img/Rectangle.jpg');
   min-height: 365px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.separator__content{
+.separator__content {
   max-width: 50%;
 }
-.separator__title{
+.separator__title {
   font-size: 48px;
   font-weight: bold;
   color: #fff;
   line-height: 1.1;
 }
 
-
 /*form*/
-.form__row{
+.form__row {
   display: flex;
   margin-bottom: 30px;
 }
-.form__input{
-  flex:1;
+.form__input {
+  flex: 1;
   margin-right: 30px;
   border-radius: 4px;
   border: none;
   background: #fff;
   padding: 22px 30px;
   font-size: 18px;
-  color: #1A1B1E;
+  color: #1a1b1e;
 }
-.form__input::placeholder{
+.form__input::placeholder {
   color: #666;
 }
-.form__input:last-child{
+.form__input:last-child {
   margin-right: 0;
 }
-.form__input--textarea{
+.form__input--textarea {
   height: 235px;
 }
-.form__controls{
+.form__controls {
   display: flex;
-  margin-bottom: 35px;
+  margin-bottom: 18px;
 }
-.form__controls-title{
+.form__controls-title {
   width: 36%;
   font-size: 18px;
-  
 }
-.controls{
-  flex:1;
+.controls {
+  flex: 1;
   display: flex;
   flex-wrap: wrap;
 }
-.controls__item{
+.controls__item {
   margin-bottom: 10px;
   margin-right: 10px;
 }
-.controls__elem{
+.controls__elem {
   cursor: pointer;
 }
-.controls__checkbox:checked ~ .controls__tag{
-  background: #B9EAE4;
+.controls__checkbox:checked ~ .controls__tag {
+  background: #b9eae4;
 }
-.controls__checkbox{
+.controls__checkbox {
   display: none;
 }
-.form__btns{
+.form__btns {
   display: flex;
   justify-content: flex-end;
 }
-.form__button{
+.form__button {
   margin-right: 20px;
 }
-.form__button:last-child{
+.form__button:last-child {
   margin-right: 0;
 }
 
 /*welcome page*/
 
-
-.welcome{
+.welcome {
   display: flex;
   position: fixed;
   top: 0;
@@ -846,40 +942,39 @@ button{
   height: 100%;
   align-items: center;
   justify-content: center;
-  background: url('./img/shades.png')center center no-repeat ,url('./img/bg.jpg') center bottom / cover no-repeat;
-
+  background: url('./img/shades.png') center center no-repeat,
+    url('./img/bg.jpg') center bottom / cover no-repeat;
 }
-.central{
+.central {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
-.central__logo{
+.central__logo {
   margin-bottom: 5px;
 }
-.central__text{
+.central__text {
   margin-bottom: 55px;
 }
-.central--asia{
+.central--asia {
   opacity: 0;
   animation: zoom 1s ease-in;
   animation-fill-mode: forwards;
 }
-@keyframes zoom{
-  from{
-    transform: scale(.7);
+@keyframes zoom {
+  from {
+    transform: scale(0.7);
   }
-  20%{
+  20% {
     transform: scale(1.15);
   }
-  40%{
-    transform: scale(.9);
+  40% {
+    transform: scale(0.9);
   }
-  60%{
+  60% {
     transform: scale(1.1);
   }
-  80%{
+  80% {
     transform: scale(0.95);
   }
   to {
