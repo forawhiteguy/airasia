@@ -138,50 +138,64 @@ button {
   transition: 0.5s;
   cursor: pointer;
 }
-.contacts__workhours {
-  font-size: 13px;
+.work{
   position: relative;
 }
-
-.contacts__workhours_wrap:hover {
-  color: red;
-  cursor: pointer;
-}
-.contacts__workhours_wrap:hover .dropdown {
-  right: 0;
-  opacity: 1;
-}
-.dropdown {
-  padding: 24px 20px 15px;
-  background: #ededed;
-  opacity: 0.8;
-  border-radius: 5px;
-  color: #000;
-  font-weight: 600;
+.work::after{
+  content: "";
   position: absolute;
-  top: 80px;
-  left: -9999px;
-  opacity: 0;
-  transition: opacity 1s;
-}
-.dropdown:before {
-  content: '';
-  height: 32px;
+  bottom: -10px;
   width: 100%;
-  position: absolute;
-  top: -30px;
-  left: 0;
+  height: 10px;
 }
-.dropdown:after {
-  content: '';
+.work__btn{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+  transition: 0.3s all;
+  cursor: pointer;
+  color: #f5170e;
+
+}
+.work__dropdown{
   position: absolute;
+  top: 31px;
+  right: 0;
+  padding: 14px 17px;
+  background: bisque;
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  width: 157px;
+  background: #ededed;
+  color: #000;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 21px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.work__dropdown-triangle{
+  position: relative;
+}
+.work__dropdown-triangle::after{
+  content: "";
+  position: absolute;
+  right: 26px;
+  top: -34px;
   border: 10px solid transparent;
-  border-bottom-color: #ededed;
-  border-top-width: 0;
-  top: -10px;
-  right: 50px;
+  border-bottom: 10px solid #ededed;
 }
-.dropdown__day {
+.work:hover .work__dropdown{
+  opacity: 0.8;
+  pointer-events: all;
+}
+.work:hover .work__btn{
+  color: #fff;
+}
+.work__dropdown-up{
   font-weight: bold;
 }
 .contacts__info {
