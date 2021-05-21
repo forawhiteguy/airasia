@@ -197,6 +197,11 @@ button {
 }
 .work__dropdown-up{
   font-weight: bold;
+  display: flex;
+}
+.work__dropdown-down{
+  display: flex;
+  
 }
 .contacts__info {
   color: #9a9a9a;
