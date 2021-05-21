@@ -201,6 +201,7 @@ button {
 }
 .work__dropdown-down{
   display: flex;
+  font-weight: 600;
   
 }
 .contacts__info {
